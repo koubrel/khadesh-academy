@@ -1,0 +1,38 @@
+body {
+  font-family: 'Arial', sans-serif; /* Use a common sans-serif font for the entire body */
+  color: #333; /* Set the default text color to a dark shade */
+}
+
+header {
+  background-color: #3949ab; /* Adjusted Blue color for the header background */
+  color: #fff; /* White text color for the header */
+  text-align: center;
+  padding: 1em;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  color: #fff; /* Brighter text color for the navigation links */
+  text-align: center;
+  padding: 14px 20px; /* Increased padding to spread out the links */
+  text-decoration: none;
+  margin-right: 10px; /* Margin between the links */
+}
+
+main {
+  padding: 20px;
+}
+
+#contact {
+  margin-bottom: 20px;
+  color: inherit; /* Inherit the default text color */
+  font-family: 'Arial', sans-serif; /* Use a common sans-serif font for the contact section */
+}
