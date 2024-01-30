@@ -1,15 +1,15 @@
 body {
-  font-family: 'Arial', sans-serif; /* Use a common sans-serif font for the entire body */
-  color: #333; /* Set the default text color to a dark shade */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0; /* Remove default margin */
 }
 
 header {
-  background-color: #3949ab; /* Adjusted Blue color for the header background */
-  color: #fff; /* White text color for the header */
+  background-color: #3949ab;
+  color: #fff;
   text-align: center;
   padding: 1em;
 }
-
 
 nav ul {
   list-style: none;
@@ -20,11 +20,16 @@ nav ul {
 
 nav a {
   display: block;
-  color: #fff; /* Brighter text color for the navigation links */
+  color: #fff;
   text-align: center;
-  padding: 14px 20px; /* Increased padding to spread out the links */
+  padding: 14px 20px;
   text-decoration: none;
-  margin-right: 10px; /* Margin between the links */
+  margin-right: 10px;
+  transition: background-color 0.3s; /* Add smooth transition for background color */
+}
+
+nav a:hover {
+  background-color: #555; /* Change background color on hover */
 }
 
 main {
@@ -33,6 +38,78 @@ main {
 
 #contact {
   margin-bottom: 20px;
-  color: inherit; /* Inherit the default text color */
-  font-family: 'Arial', sans-serif; /* Use a common sans-serif font for the contact section */
+  color: inherit;
+  font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    width: auto;
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 0.5em;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+/* Add this at the end of your existing CSS */
+
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    width: auto;
+    margin: 5px 10px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+    height: 2px;
+    width: 20px;
+    display: block;
+    margin: 4px 0;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: none;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .collapse.show {
+    display: block;
+  }
 }
